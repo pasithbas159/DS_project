@@ -14,31 +14,33 @@ cols = ['school', 'sex', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu',
 for i in cols:
     mat[i] = mat[i].astype('category')
     por[i] = por[i].astype('category')
-# 3. visualization&EDA
-print(mat.loc[:, mat.dtypes == np.int64].corr())
-sns.heatmap(mat.loc[:, mat.dtypes == np.int64])
-sns.pairplot(mat.loc[:, mat.dtypes == np.int64])
-# age, school and sex
-plt.figure(figsize = (8, 5))
-plt.subplot(131)
-sns.countplot(x=mat.school)
-plt.subplot(132)
-sns.countplot(x=mat.age)
-plt.subplot(133)
-sns.countplot(x=mat.sex)
-plt.show()
 # =============================================================================
-# # absences VS Grade
+# # 3. visualization&EDA
+# print(mat.loc[:, mat.dtypes == np.int64].corr())
+# sns.heatmap(mat.loc[:, mat.dtypes == np.int64])
+# sns.pairplot(mat.loc[:, mat.dtypes == np.int64])
+# # age, school and sex
+# plt.figure(figsize = (8, 5))
 # plt.subplot(131)
-# sns.lmplot(x='absences', y='G1', data=mat)
+# sns.countplot(x=mat.school)
 # plt.subplot(132)
-# sns.lmplot(x='absences', y='G2', data=mat)
+# sns.countplot(x=mat.age)
 # plt.subplot(133)
-# sns.lmplot(x='absences', y='G3', data=mat)
+# sns.countplot(x=mat.sex)
 # plt.show()
+# # =============================================================================
+# # # absences VS Grade
+# # plt.subplot(131)
+# # sns.lmplot(x='absences', y='G1', data=mat)
+# # plt.subplot(132)
+# # sns.lmplot(x='absences', y='G2', data=mat)
+# # plt.subplot(133)
+# # sns.lmplot(x='absences', y='G3', data=mat)
+# # plt.show()
+# # =============================================================================
+# sns.lmplot(x='G1', y='G2', data=mat, col='Dalc')
+# sns.lmplot(x='G2', y='G3', data=mat, col='Dalc')
 # =============================================================================
-sns.lmplot(x='G1', y='G2', data=mat, col='Dalc')
-sns.lmplot(x='G2', y='G3', data=mat, col='Dalc')
 # 4. train_test_split
 from sklearn.model_selection import train_test_split
 X = mat[['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu',
@@ -69,7 +71,10 @@ pipeline.fit(X_train, y_train)
 pipeline.score(X_train, y_train)
 y_pred = pipeline.predict(X_test).round(0)
 # 7. test accuracy
-from sklearn.metrics import confusion_matrix, classification_report
-print(confusion_matrix(y_test, y_pred))
+from sklearn.metrics import confusion_matrix, accuracy_score
+print(y_pred)
 print('-'*100)
-print(classification_report(y_test, y_pred))
+print(confusion_matrix(y_test, y_pred))
+print(f'R-Squared: {pipeline.score(X_train, y_train)}') #0.188
+print(f'accuracy score: {accuracy_score(y_test, y_pred)}') #0.101
+
