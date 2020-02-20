@@ -42,7 +42,7 @@ y = dat[['class']]
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=101)
 # 5. modeling
 from sklearn.neighbors import KNeighborsClassifier
-model = KNeighborsClassifier()
+model = KNeighborsClassifier(n_neighbors=7)
 model.fit(X_train, y_train)
 model.score(X_train, y_train)
 # 6. predicted
