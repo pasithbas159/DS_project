@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # 1. importing
 mat = pd.read_csv('C:/jupyterout/UCI_project/student-mat.csv', sep = ';')
+
 # 2. cleaning&formating
 cols = ['school', 'sex', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu',
         'reason', 'guardian', 'studytime',
@@ -12,6 +13,7 @@ cols = ['school', 'sex', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu',
        , 'Walc', 'health']
 for i in cols:
     mat[i] = mat[i].astype('category')
+
 # =============================================================================
 # # 3. visualization&EDA
 # print(mat.loc[:, mat.dtypes == np.int64].corr())
@@ -39,6 +41,7 @@ for i in cols:
 # sns.lmplot(x='G1', y='G2', data=mat, col='Dalc')
 # sns.lmplot(x='G2', y='G3', data=mat, col='Dalc')
 # =============================================================================
+
 # 4. train_test_split
 from sklearn.model_selection import train_test_split
 X = mat[['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu',
@@ -48,6 +51,7 @@ X = mat[['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu'
        'Walc', 'health', 'absences', 'G1', 'G2']]
 y = mat['G3']
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=101)
+
 # 5. pipeline
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import make_pipeline
@@ -59,15 +63,16 @@ col_trans = make_column_transformer(
        'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc'
        , 'Walc', 'health']))
 col_trans
-
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 pipeline = make_pipeline(col_trans, model)
 pipeline
+
 # 6. modeling
 pipeline.fit(X_train, y_train)
 pipeline.score(X_train, y_train)
 y_pred = pipeline.predict(X_test).round(0)
+
 # 7. test accuracy
 from sklearn.metrics import confusion_matrix, accuracy_score
 print(y_pred)
