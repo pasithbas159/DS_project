@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-df = pd.read_csv(r'C:\Users\Lenovo\Desktop\project\car_UCI\car_data.csv', sep=',', 
+df = pd.read_csv(r'https://github.com/pasithbas159/DS_project/raw/master/car_UCI/car_data.csv', sep=',', 
                  names=['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'class'], index_col=False)
 df = pd.DataFrame(df)
 
@@ -16,7 +16,7 @@ for i in cols:
 # df.doors = df.doors.str.replace('5more', '6')
 # df.persons = df.persons.str.replace('more', '5')
 df.doors = df.doors.apply(lambda x: 6 if x == '5more' else  x)
-df.persons = df.persons.apply(lambda x: 5 if v=='more' else x)
+df.persons = df.persons.apply(lambda x: 5 if x=='more' else x)
 df.doors = df.doors.astype('int32')
 df.persons = df.persons.astype('int32')
 
