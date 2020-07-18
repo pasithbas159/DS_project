@@ -1,7 +1,7 @@
 # My first (b1a5s9) GAME using arcade library.
 ## Get Started
 ### Installing
-First, you need to install python (python 3.0+ is preferred) and also have a library called "arcade" by running this code.
+First, you need to install python (python 3.0+ is preferred) and also have a library called "arcade" by running this code on your terminal.
 ```
 pip install arcade
 ```
