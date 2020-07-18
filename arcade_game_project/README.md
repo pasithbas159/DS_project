@@ -7,6 +7,8 @@ pip install arcade
 ```
 ### Playing the game
 To play this game is so easy. just download this entire folder and run myGame.py
+### Version
+First 1.0
 ### Finally 
 Have fun. :)
 ### Further update
