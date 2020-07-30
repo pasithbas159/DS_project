@@ -3,7 +3,7 @@ This is my self project on data analytics and data science process.
 
 Here's my project & knowledge that I have learned and use.
 1. [UCI student grading](UCI_spyder.py) : Create a pipeline apply with Multiple Linear Regression.
-2. [UCI breast cancer classification](Breast cancer.ipynb) : Breast cancer classification (malignant or benign) mainly on Logistic Regression
+2. [UCI breast cancer classification](Breast_cancer.ipynb) : Breast cancer classification (malignant or benign) mainly on Logistic Regression
 3. [MNIST handwritten](MNIST_dataset.ipynb) : Hand written classification. So I use typical classification technique (Logistic Regression, Support Vector Machine and Random Forest) and feature engineering technique (Standardization and Dimensional Reduction).
 4. [COVID-19 cases predicted](corona_cases/corona_cases_predicted.ipynb)corona_cases_predicted.ipynb : Research Assistant mini-project that dealing with time-series data. Autoregression, Moving Average and Exponential Smoothing are the technique that I try to use.
 5. [CIFAR-10 object recognition](CNN_cifar10.ipynb) : Object recognition problem to classifies 10 classes. Convolutional Neural Networks (CNN) with Data Augmentation is the key to achieve classification goal.
