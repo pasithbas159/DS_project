@@ -1,0 +1,13 @@
+# Data Science project
+This is my self project on data analytics and data science process.
+
+Here's my project & knowledge that I have learned and use.
+1. UCI_spyder.py : Create a pipeline apply with Multiple Linear Regression.
+2. Breast cancer.ipynb : Breast cancer classification (malignant or benign) mainly on Logistic Regression
+3. MNIST_dataset.ipynb : Hand written classification. So I use typical classification technique (Logistic Regression, Support Vector Machine and Random Forest) and feature engineering technique (Standardization and Dimensional Reduction).
+4. corona_cases_predicted.ipynb : Research Assistant mini-project that dealing with time-series data. Autoregression, Moving Average and Exponential Smoothing are the technique that I try to use.
+5. CNN_cifar10.ipynb : Object recognition problem to classifies 10 classes. Convolutional Neural Networks (CNN) with Data Augmentation is the key to achieve classification goal.
+6. Mushroom_extract.ipynb : This is my second Research Assistant mini-project to do text analysis. First, I use pythainlp with attacut engine to do word tokenize. Then I use n-grams to see those words that correspond to the topic.For example, If we use 3-grams we'll saw mushroom species ('เห็ด', 'นางรม', 'ฮังการี').
+7. Sentiment_Analysis.ipynb : The second NLP project is Sentiment analysis. I use tensorflow tokenizer to tokenize words and collect them to vector. Then I apply my Recurrent Neural Networks (RNN) to those vector such as Single LSTM, Embedding Neural Network, 1D Convolutional and GRUs to classify sentiment from texts.
+8. IBM_employee_analysis : Data Analytics & Visualization project to solve the problem that the company faces such as predicting and finding the factors that could effect employees are likely to leave the company.
+9. myGame.py : My first python game that I created to improve my OOP programing and it's very fun to build :)
