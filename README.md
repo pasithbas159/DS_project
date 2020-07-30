@@ -1,4 +1,4 @@
-# Data Science project
+# Data Science & Data Analytic project
 This is my self project on data analytics and data science process.
 
 Here's my project & knowledge that I have learned and use.
