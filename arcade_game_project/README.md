@@ -1,4 +1,5 @@
 # My first (b1a5s9) GAME using arcade library.
+![game_picture](https://github.com/pasithbas159/DS_project/blob/master/arcade_game_project/picture.jpg)
 ## Get Started
 ### Installing
 First, you need to install python (python 3.0+ is preferred) and also have a library called "arcade" by running this code on your terminal.
