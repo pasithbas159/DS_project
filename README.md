@@ -2,8 +2,10 @@
 This is my self project on data analytics and data science process.
 
 Here's my project & knowledge that I have learned and use.
-## Kaggle Competition [My Kaggle](https://www.kaggle.com/binman159)
+## Kaggle Competition 
 1. [House Prices: Advanced Regression Techniques](https://github.com/pasithbas159/DS_project/blob/master/Kaggle_project/house-prices-advanced-regression-techniques/House_Prices.ipynb) : Now on Top 3%
+
+  [My Kaggle Profile](https://www.kaggle.com/binman159)
 
 ## Self-learned mini-project: 
 1. [UCI student grading](UCI_spyder.py) : Create a pipeline apply with Multiple Linear Regression.
