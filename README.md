@@ -3,8 +3,9 @@ This is my self project on data analytics and data science process.
 
 Here's my project & knowledge that I have learned and use.
 ## Kaggle Competition 
-1. [House Prices: Advanced Regression Techniques](https://github.com/pasithbas159/DS_project/blob/master/Kaggle_project/house-prices-advanced-regression-techniques/House_Prices.ipynb) : Now on Top 3%
-2. [OSIC Pulmonary Fibrosis Progression](https://www.kaggle.com/binman159/osic-lung) : Now on Top 88%
+1. [House Prices: Advanced Regression Techniques](https://github.com/pasithbas159/DS_project/blob/master/Kaggle_project/house-prices-advanced-regression-techniques/House_Prices.ipynb) : Top 3%
+2. [OSIC Pulmonary Fibrosis Progression](https://www.kaggle.com/binman159/osic-lung) : Top 87%
+3. (On process) [Riiid! Answer Correctness Prediction](https://www.kaggle.com/c/riiid-test-answer-prediction/overview) : Now on Top 76%
 
   [My Kaggle Profile](https://www.kaggle.com/binman159)
 
