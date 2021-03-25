@@ -6,7 +6,7 @@ Here's my project & knowledge that I have learned and use.
 1. [House Prices: Advanced Regression Techniques](https://github.com/pasithbas159/DS_project/blob/master/Kaggle_project/house-prices-advanced-regression-techniques/House_Prices.ipynb) : Top 3%
 2. [OSIC Pulmonary Fibrosis Progression](https://www.kaggle.com/binman159/osic-lung) : Top 87%
 3. [Riiid! Answer Correctness Prediction](https://www.kaggle.com/c/riiid-test-answer-prediction/overview) : Top 76%
-4. [Shopee Code League - Multi-Channel Contacts] : Top 71%
+4. Shopee Code League - Multi-Channel Contacts : Top 71%
 5. [Shopee Code League - Address Elements Extraction](https://www.kaggle.com/binman159/scl-ds-round-bi-lstm-for-text-classification) : Top 39%
 
   [My Kaggle Profile](https://www.kaggle.com/binman159)
