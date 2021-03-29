@@ -21,3 +21,5 @@ Here's my project & knowledge that I have learned and use.
 7. [NLP application with Sentiment Analysis](https://github.com/pasithbas159/DS_project/blob/master/NLP%20Project/Sentiment_Analysis.ipynb) : The second NLP project is Sentiment Analysis. I use tensorflow tokenizer to tokenize words and collect them to vector. Then I apply my Recurrent Neural Networks (RNN) to those vector such as Single LSTM, Embedding Neural Network, 1D Convolutional and GRUs to classify sentiment from texts.
 8. [IBM employee analysis](IBM_employee_analysis) : Data Analytics & Visualization project to solve the problem that the company faces such as predicting and finding the factors that could effect employees are likely to leave the company.
 9. [python OOP project](arcade_game_project) : My first python game that I created using arcade to improve my OOP programing and it's very fun to build :)
+10. [Data Analytics Web Application using Streamlit](https://github.com/pasithbas159/streamlit-analytics)
+11. [Data Science Web Application using Streamlit](https://github.com/pasithbas159/streamlit-analytics)
